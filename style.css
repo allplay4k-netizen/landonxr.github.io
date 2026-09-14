@@ -4,12 +4,13 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
-.bg-grid{position:fixed;inset:0;z-index:-2;background-image:linear-gradient(rgba(59,140,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(59,140,255,.055) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+.bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(59,140,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(59,140,255,.055) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
 .bg-grid:after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 15%,rgba(59,140,255,.14),transparent 34%)}
-.falling-code{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;opacity:.42;mask-image:linear-gradient(to bottom,transparent 0%,black 12%,black 88%,transparent 100%)}
+.falling-code{position:fixed;inset:0;z-index:1;overflow:hidden;pointer-events:none;opacity:.42;mask-image:linear-gradient(to bottom,transparent 0%,black 12%,black 88%,transparent 100%)}
 .code-column{position:absolute;top:-35vh;white-space:pre;font-family:'Courier New',monospace;font-size:13px;line-height:1.65;font-weight:600;color:var(--blue);text-shadow:0 0 10px rgba(59,140,255,.55);animation:codeFall linear infinite}
 .code-column.light{color:var(--blue2);text-shadow:0 0 10px rgba(101,177,255,.6)}
 @keyframes codeFall{from{transform:translateY(0)}to{transform:translateY(145vh)}}
+.nav,main,footer{position:relative;z-index:2}
 .nav{height:78px;max-width:1180px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.06)}
 .logo{font-weight:800;letter-spacing:.08em;color:var(--text);text-decoration:none}.logo span{color:var(--blue)}
 nav{display:flex;gap:28px}nav a{color:var(--muted);text-decoration:none;font-size:14px;transition:.2s}nav a:hover{color:white}
