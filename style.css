@@ -1,17 +1,17 @@
 *{box-sizing:border-box}
 :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:dark}
-html,body{margin:0;min-height:100%;background:#090c0f;color:#f4f7f5}
+html,body{margin:0;width:100%;min-height:100%;background:#090c0f;color:#f4f7f5}
 body{min-height:100vh}
-.page{padding:32px 24px 100px}
+.page{padding:32px 24px 110px}
 .page h1{margin:0;font-size:2rem}
 .page p{color:#8f9994}
-.navbar{position:fixed;z-index:100;left:0;right:0;bottom:0;padding:10px;background:rgba(15,19,18,.94);border-top:1px solid #26302b;backdrop-filter:blur(14px)}
-.nav--list{display:flex;align-items:center;justify-content:space-around;gap:6px;margin:0;padding:0;list-style:none}
+.navbar{position:fixed;z-index:9999;left:0;right:0;bottom:0;width:100%;display:block;padding:10px 8px max(10px,env(safe-area-inset-bottom));background:rgba(15,19,18,.97);border-top:1px solid #26302b;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.nav--list{display:flex;align-items:center;justify-content:space-around;width:100%;margin:0;padding:0;list-style:none;gap:4px}
 .item{flex:1;min-width:0}
-.item a{min-height:58px;padding:7px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-radius:12px;color:#9ca6a1;text-decoration:none;transition:transform .2s ease,background .2s ease,color .2s ease,box-shadow .2s ease}
+.item a{min-height:58px;width:100%;padding:7px 4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-radius:12px;color:#9ca6a1;text-decoration:none;transition:transform .2s ease,background .2s ease,color .2s ease,box-shadow .2s ease}
 .item a span{font-size:21px;line-height:1}
 .item a b{font-size:11px;font-weight:600;white-space:nowrap}
-.item.active a{color:#55e68b}
+.item.active a{color:#55e68b;background:#15251c}
 @media (min-width:800px){
   .page{padding:40px 40px 40px 120px}
   .navbar{top:0;bottom:0;left:0;right:auto;width:88px;padding:18px 10px;border-top:0;border-right:1px solid #26302b}
