@@ -1,26 +1,23 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Homelab</title>
-  <link rel="stylesheet" href="style.css?v=3">
-</head>
-<body>
-  <main class="page">
-    <h1>Homelab</h1>
-    <p>Server dashboard</p>
-  </main>
-
-  <nav class="navbar" aria-label="Main navigation">
-    <ul class="nav--list">
-      <li class="item active"><a href="#" aria-label="Dashboard"><span>⌂</span><b>Dashboard</b></a></li>
-      <li class="item"><a href="#" aria-label="Minecraft"><span>▣</span><b>Minecraft</b></a></li>
-      <li class="item"><a href="#" aria-label="Servers"><span>▤</span><b>Servers</b></a></li>
-      <li class="item"><a href="#" aria-label="Network"><span>⌁</span><b>Network</b></a></li>
-      <li class="item"><a href="#" aria-label="Settings"><span>⚙</span><b>Settings</b></a></li>
-    </ul>
-  </nav>
-  <script src="script.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Homelab Dashboard</title><link rel="stylesheet" href="style.css?v=4"></head>
+<body><main class="page">
+<header class="dashboard-header"><div><p class="eyebrow">HOMELAB</p><h1>Dashboard</h1><p class="subtitle">Everything looks good.</p></div><div class="status-pill"><span></span> All systems online</div></header>
+<section class="stats-grid">
+<article class="card stat-card"><div class="card-top"><span>CPU</span><strong>28%</strong></div><div class="progress"><i style="width:28%"></i></div><small>8 cores · 2.4 GHz</small></article>
+<article class="card stat-card"><div class="card-top"><span>Memory</span><strong>1.8 / 8 GB</strong></div><div class="progress"><i style="width:23%"></i></div><small>23% used</small></article>
+<article class="card stat-card"><div class="card-top"><span>Storage</span><strong>184 GB</strong></div><div class="progress"><i style="width:37%"></i></div><small>37% of 500 GB used</small></article>
+<article class="card stat-card"><div class="card-top"><span>Uptime</span><strong>12d 4h</strong></div><div class="uptime-line"><span></span> Running normally</div><small>Since Sep 15, 2026</small></article>
+</section>
+<section class="main-grid">
+<article class="card minecraft-card"><div class="section-title"><div><span class="minecraft-icon">▣</span><div><h2>Minecraft</h2><p>Paper Server</p></div></div><span class="online-badge"><i></i> Online</span></div>
+<div class="minecraft-stats"><div><span>Players</span><strong>2 / 20</strong></div><div><span>Version</span><strong>1.21.10</strong></div><div><span>RAM</span><strong>1.6 GB</strong></div><div><span>Ping</span><strong>18 ms</strong></div></div>
+<div class="player-list"><span>Online now</span><b>LandonCreatesYT</b><b>Alex</b></div></article>
+<article class="card"><div class="section-title"><div><h2>Services</h2><p>Server applications</p></div></div><div class="service-list">
+<div><span><i class="dot"></i> Minecraft</span><b>Online</b></div><div><span><i class="dot"></i> Web Dashboard</span><b>Online</b></div><div><span><i class="dot"></i> SSH</span><b>Online</b></div><div><span><i class="dot"></i> RCON</span><b>Online</b></div>
+</div></article></section>
+<section class="card network-card"><div class="section-title"><div><h2>Network</h2><p>Local homelab connection</p></div><span class="online-badge"><i></i> Connected</span></div>
+<div class="network-grid"><div><span>Server IP</span><strong>192.168.9.158</strong></div><div><span>Gateway</span><strong>192.168.9.1</strong></div><div><span>Interface</span><strong>enp0s31f6</strong></div><div><span>Link speed</span><strong>1 Gbps</strong></div></div></section>
+</main>
+<nav class="navbar" aria-label="Main navigation"><ul class="nav--list">
+<li class="item active"><a href="#" aria-label="Dashboard"><span>⌂</span><b>Dashboard</b></a></li><li class="item"><a href="#" aria-label="Minecraft"><span>▣</span><b>Minecraft</b></a></li><li class="item"><a href="#" aria-label="Servers"><span>▤</span><b>Servers</b></a></li><li class="item"><a href="#" aria-label="Network"><span>⌁</span><b>Network</b></a></li><li class="item"><a href="#" aria-label="Settings"><span>⚙</span><b>Settings</b></a></li>
+</ul></nav><script src="script.js"></script></body></html>
