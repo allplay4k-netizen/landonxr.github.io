@@ -1,0 +1,24 @@
+*{box-sizing:border-box}
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:dark}
+html,body{margin:0;min-height:100%;background:#090c0f;color:#f4f7f5}
+body{min-height:100vh}
+.page{padding:32px 24px 100px}
+.page h1{margin:0;font-size:2rem}
+.page p{color:#8f9994}
+.navbar{position:fixed;z-index:100;left:0;right:0;bottom:0;padding:10px;background:rgba(15,19,18,.94);border-top:1px solid #26302b;backdrop-filter:blur(14px)}
+.nav--list{display:flex;align-items:center;justify-content:space-around;gap:6px;margin:0;padding:0;list-style:none}
+.item{flex:1;min-width:0}
+.item a{min-height:58px;padding:7px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-radius:12px;color:#9ca6a1;text-decoration:none;transition:transform .2s ease,background .2s ease,color .2s ease,box-shadow .2s ease}
+.item a span{font-size:21px;line-height:1}
+.item a b{font-size:11px;font-weight:600;white-space:nowrap}
+.item.active a{color:#55e68b}
+@media (min-width:800px){
+  .page{padding:40px 40px 40px 120px}
+  .navbar{top:0;bottom:0;left:0;right:auto;width:88px;padding:18px 10px;border-top:0;border-right:1px solid #26302b}
+  .nav--list{height:100%;flex-direction:column;justify-content:center;gap:14px}
+  .item{flex:0 0 auto;width:100%}
+  .item a{min-height:68px}
+  .item a b{font-size:10px}
+  .item:hover a{transform:translateX(10px) scale(1.08);color:#52ed8b;background:#15251c;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+  .item:hover a span{transform:scale(1.08)}
+}
