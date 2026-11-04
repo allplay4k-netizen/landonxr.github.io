@@ -1,6 +1,6 @@
-// Public Supabase project settings. The anon key is designed to be public.
-// Never put a service-role key, Resend key, or password in this file.
+// Public Supabase project settings. The publishable key is designed to be public.
+// Never put a secret/service-role key, Resend key, or password in this file.
 window.STORE_CONFIG = {
-  supabaseUrl: "PASTE_YOUR_SUPABASE_PROJECT_URL_HERE",
-  supabaseAnonKey: "PASTE_YOUR_SUPABASE_ANON_KEY_HERE"
+  supabaseUrl: "https://tojwkmcwzfbnunycidgw.supabase.co",
+  supabaseAnonKey: "sb_publishable_Gh0t1G4Cj3O7rikoNM7U7g_89MbI2rE"
 };
