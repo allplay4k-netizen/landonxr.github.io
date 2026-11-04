@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Simple website I made from a tutorial">
-  </head>
-
-  <body>
-    <h1>Landons Website</h1>
-
-    <p>hewwoo world :3</p>
-
-    <br>
-
-    <p><b><i>cheese</i></b></p>
-
-    <hr>
-  </body>
-</html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Small-batch 3D prints and custom print requests.">
+<title>3D Prints</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="wordmark" href="./">3D Prints</a><nav class="navlinks"><a href="#shop">Shop</a><a href="#custom">Custom prints</a><a href="#contact">Contact</a></nav></div></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">Small-batch 3D printing</div><h1>Useful things, made one layer at a time.</h1><p>Browse the current prints or send a request for something custom. Every item is made to order unless noted otherwise.</p></section>
+<section id="shop"><div class="sectionhead"><h2>Available prints</h2><span class="muted" id="product-count"></span></div><div id="products" class="products"><div class="empty">Loading prints…</div></div></section>
+<section id="custom" class="contact"><div><h2>Looking for something custom?</h2><p>Send a request with what you have in mind and the size you need.</p></div><a class="button secondary" href="mailto:landon.luper@icloud.com?subject=Custom%20print%20request">Ask about a custom print</a></section>
+<section id="contact" class="contact"><div><h2>Questions?</h2><p>Get in touch before placing a request.</p></div><a class="button secondary" href="mailto:landon.luper@icloud.com">Email</a></section>
+</main>
+<footer class="footer"><div class="wrap">Independent 3D printing · <a href="admin.html">Admin</a></div></footer>
+<div id="order-modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="order-title" style="position:fixed;inset:0;background:#0008;z-index:5;overflow:auto;padding:24px">
+<div class="panel" style="background:white;margin:5vh auto"><div style="display:flex;justify-content:space-between;align-items:center"><h1 id="order-title">Request this print</h1><button id="close-order" class="secondary" type="button">Close</button></div>
+<form id="order-form"><input type="hidden" id="order-product-id"><div class="field"><label for="customer-name">Your name</label><input id="customer-name" maxlength="100" required></div><div class="field"><label for="customer-contact">Email or other contact</label><input id="customer-contact" maxlength="160" required></div><div class="field"><label for="order-notes">Notes (optional)</label><textarea id="order-notes" maxlength="1000" placeholder="Color, quantity, or other details"></textarea></div><button id="send-order" type="submit">Send request</button><p id="order-status" class="notice" aria-live="polite">This sends a request, not an automatic purchase.</p></form></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="store.js"></script>
+</body></html>
